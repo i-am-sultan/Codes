@@ -1,0 +1,10 @@
+body{
+
+    width: 30em;
+    height: 5em;
+    background-color: white;
+    display: flex;
+}
+h1{
+    color: black;
+}

@@ -1,0 +1,45 @@
+-- Online SQL Editor to Run SQL Online.
+-- Use the editor to create new tables, insert data and all 
+
+/*
+  create table staff
+  (
+    staff_id varchar(20) ,
+    staff_type varchar(20),
+    school_id varchar(20),
+    first_name varchar(100) not null,
+    last_name varchar(100) not null,
+    age int,
+    DOB date,
+    gender varchar(10) check(gender IN('Male','Female')),
+    join_date date,
+    address varchar(100),
+    PRIMARY KEY(staff_id),
+    FOREIGN KEY(school_id) references school(school_id)
+    ); 
+*/ 
+--drop table staff;
+/*
+  create table school
+  (
+    school_id varchar(20),
+    school_name varchar(50) not null,
+    school_address varchar(100),
+    PRIMARY KEY(school_id)
+    );
+*/
+--insert into staff values ('111','Associate','1212','Firoj','Hassan',12,1900-02-19,'Male','null','Kolkata');
+--insert into staff values('141','Associate','1212','Firoj','Hassan',12,1999-02-19,'Male','null','Kolkata');
+--insert into school values('1212','Rajadanga PM High School','Rajadanga');
+
+--alter table staff rename to staff_new;
+--alter table staff rename column first_name to First_Name ;
+--alter table staff drop column join_date; 
+--alter table staff ADD CONSTRAINT sch_unq UNIQUE(First_Name);
+--delete from staff where staff_id='141';
+
+--inserting multiple records at once
+--insert into staff values ('161','Associate','1212','Jesmin','Hassan',45,1999-5-12,'Female','Punjab'),('171','Associate','1212','Tapas','Hassan',54,2012-02-19,'Male','Siliguri'), ('181','Associate','1212','Saikat','Hassan',25,2001-05-29,'Male','Kolkata');
+
+--update staff set staff_type='Senior Software Engineer' where age>22;
+--delete from staff where First_Name='Sultan';             
