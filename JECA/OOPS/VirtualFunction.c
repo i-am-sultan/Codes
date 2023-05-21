@@ -32,3 +32,7 @@ int main()
 
 	return 0;
 }
+
+//output
+// print derived class
+// show base class
